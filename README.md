@@ -1,7 +1,6 @@
 # Demo UI Message Manager
 
-This project demonstrates a robust and reusable UI message management system for Android apps using Jetpack Compose and Kotlin.
-It provides a clean architecture for handling transient UI messages (such as success and error notifications) in a lifecycle-aware, testable, and extensible way.
+This project demonstrates a robust and reusable UI message management system for Android apps using Jetpack Compose and Kotlin. It provides a clean architecture for handling transient UI messages (such as success and error notifications) in a lifecycle-aware, testable, and extensible way.
 
 ## Features
 - **UiMessageManager**: Interface and default implementation for managing UI messages in a type-safe, observable, and decoupled manner.
@@ -35,6 +34,10 @@ CollectUiMessageFlowEffect(uiMessageFlow = viewModel.uiMessageFlow) { message ->
 }
 ```
 
+## Reference & Original Source
+This project is inspired by and adapted from the excellent work in the Tivi project by Chris Banes:
+- https://github.com/chrisbanes/tivi/blob/main/common/ui/compose/src/commonMain/kotlin/app/tivi/common/compose/UiMessage.kt
+
 ## Requirements
 - Kotlin
 - Jetpack Compose
@@ -42,4 +45,3 @@ CollectUiMessageFlowEffect(uiMessageFlow = viewModel.uiMessageFlow) { message ->
 
 ## License
 MIT License
-
