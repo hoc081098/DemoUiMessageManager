@@ -22,9 +22,17 @@ This project demonstrates a robust and reusable UI message management system for
 3. **Collect messages** in your Compose UI using `CollectUiMessageFlowEffect`.
 
 ## Example
+
 ```kotlin
 // In your ViewModel
 val uiMessageManager = DefaultUiMessageManager<MainEvent>()
+
+uiMessageManager.emitMessage(
+    UiMessage(
+        MainEvent.Success("Operation completed successfully")
+    )
+)
+
 val uiMessageFlow = uiMessageManager.uiMessageFlow
 
 // In your Composable
